@@ -6,14 +6,23 @@ import { PERMISSIONS, entryPointUriPath } from './src/constants';
 const config = {
   name: 'Starter A05e1b',
   entryPointUriPath,
+  mcApiUrl: 'https://mc.us-central1.gcp.commercetools.com/honda',
   cloudIdentifier: 'gcp-us',
+  headers: {
+    csp: {
+      'connect-src': [
+        'https://api.us-central1.gcp.commercetools.com',
+        'https://auth.us-central1.gcp.commercetools.com',
+        'https://mc-api.us-central1.gcp.commercetools.com/graphql',
+      ],
+    },
+  },
   env: {
     development: {
       initialProjectKey: 'honda',
     },
     production: {
       applicationId: 'clxvafwyd001m907kugt0x3n7',
-      url: 'https://your_app_hostname.com',
     },
   },
   oAuthScopes: {
