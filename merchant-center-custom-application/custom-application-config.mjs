@@ -13,7 +13,7 @@ const config = {
     },
     production: {
       applicationId: 'clxvafwyd001m907kugt0x3n7',
-      url: '/',
+      url: 'http://localhost:8080',
     },
   },
   oAuthScopes: {
