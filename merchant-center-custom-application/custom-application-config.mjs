@@ -13,7 +13,7 @@ const config = {
     },
     production: {
       applicationId: 'clxvafwyd001m907kugt0x3n7',
-      url: 'https://mc-app-a873791f-0a72-4744-9514-fbe13e14d0c3.us-central1.gcp.commercetools.app',
+      url: '/',
     },
   },
   oAuthScopes: {
