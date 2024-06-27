@@ -32,6 +32,7 @@ const Welcome = () => {
   return productsResult.products.results.map((product) => {
     return (
       <div key={product.id}>
+        <h1>products dev 2</h1>
         <h1>{product.key}</h1>
         <p>{product.id}</p>
       </div>
