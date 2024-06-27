@@ -9,10 +9,10 @@ const config = {
   cloudIdentifier: 'gcp-us',
   env: {
     development: {
-      initialProjectKey: 'honda',
+      initialProjectKey: 'honda-dev',
     },
     production: {
-      applicationId: 'clxwhzg9u000b9wcw69km50cz',
+      applicationId: 'clxxm2gt4000ltws22jmzn9m0',
       url: '${env:APPLICATION_URL}',
     },
   },
