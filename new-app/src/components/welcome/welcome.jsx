@@ -29,16 +29,29 @@ const Welcome = () => {
     return <>Loading...</>;
   }
 
-  <h1>products dev</h1>;
+  const logMessage = () => {
+    console.log('logging message on dev' + Math.floor(Math.random() * 1000));
+  };
 
-  return productsResult.products.results.map((product) => {
-    return (
-      <div key={product.id}>
-        <h1>{product.key}</h1>
-        <p>{product.id}</p>
-      </div>
-    );
-  });
+  const logError = () => {
+    console.error('logging error on dev' + Math.floor(Math.random() * 1000));
+  };
+
+  return (
+    <div>
+      <h1>products dev</h1>;
+      <button onClick={() => logMessage()}>Log Message</button>
+      <button onClick={() => logError()}>Log Error</button>
+      {productsResult.products.results.map((product) => {
+        return (
+          <div key={product.id}>
+            <h1>{product.key}</h1>
+            <p>{product.id}</p>
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 Welcome.displayName = 'Home';
 
