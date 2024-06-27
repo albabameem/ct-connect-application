@@ -28,6 +28,7 @@ const Welcome = () => {
   if (loading) {
     return <>Loading...</>;
   }
+  <h1>products prod</h1>;
 
   return productsResult.products.results.map((product) => {
     return (
